@@ -1,1 +1,11 @@
-/* No CSS */
+:root {
+  --color-primary: red;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
