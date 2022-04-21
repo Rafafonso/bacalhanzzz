@@ -9,3 +9,50 @@ html {
 .text-primary {
   color: var(--color-primary);
 }
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#6401ff), to(#8bfcfe));
+  background: linear-gradient(90deg, #6401ff 0%, #8bfcfe 100%);
+}
+
+.popup {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.popup-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+          backdrop-filter: blur(18px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.33);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100% - 100px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% - 100px);
+  margin: auto;
+}
+
+.popup.is--small .popup-content {
+  height: 30%;
+  width: 40%;
+}
