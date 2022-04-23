@@ -1,5 +1,19 @@
 :root {
   --color-primary: red;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-base: 16px;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-base: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 40px;
+  --space-xxl: 48px;
+  --border-size-soft: 4px;
+  --border-size-medium: 8px;
+  --border-size-rounded: 50px;
+  --border-size-circle: 100%;
 }
 
 html {
@@ -13,6 +27,15 @@ html {
 body {
   background: -webkit-gradient(linear, left top, right top, from(#6401ff), to(#8bfcfe));
   background: linear-gradient(90deg, #6401ff 0%, #8bfcfe 100%);
+}
+
+.btn {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-size-medium);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  padding: var(--space-s) var(--space-m);
 }
 
 .popup {
@@ -44,6 +67,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: calc(100% - 100px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
